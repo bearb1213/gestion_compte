@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="3.0"
+             xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence
+             https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd">
+    
+    <persistence-unit name="PretPU" transaction-type="JTA">
+        <description>Persistence pour gestion de compte courant </description>
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        
+        <!-- DataSource définie dans WildFly -->
+        <jta-data-source>java:/PretDS</jta-data-source>
+        
+        <!-- Propriétés JPA/Hibernate -->   
+        <properties>
+            <!-- Dialect pour MySQL 8 -->
+            <property name="jakarta.persistence.jdbc.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
+            
+            <!-- Génération automatique du schéma -->
+            <property name="jakarta.persistence.schema-generation.database.action" value="update"/>
+            
+            <!-- Affichage des requêtes SQL (désactiver en production) -->
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            
+            <!-- Paramètres de performance -->
+            <property name="hibernate.jdbc.batch_size" value="20"/>
+            <property name="hibernate.order_inserts" value="true"/>
+            <property name="hibernate.order_updates" value="true"/>
+            
+            <!-- Encodage UTF-8 -->
+            <property name="hibernate.connection.charSet" value="UTF-8"/>
+            <property name="hibernate.connection.characterEncoding" value="UTF-8"/>
+            <property name="hibernate.connection.useUnicode" value="true"/>
+        </properties>
+    </persistence-unit>
+</persistence>
