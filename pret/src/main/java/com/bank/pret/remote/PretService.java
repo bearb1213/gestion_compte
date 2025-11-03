@@ -26,7 +26,6 @@ import com.bank.pret.dao.PretDao;
 import com.bank.pret.dao.StatusRemboursementDao;
 import com.bank.pret.dao.HistoStatusRemboursementDao;
 
-import java.sql.Date;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
@@ -81,7 +80,7 @@ public class PretService implements PretServiceRemote {
     }
     
     @Override
-    public Compte findAccountById(int id) {
+    public Compte findAccountById(int id) { 
         return compteDao.find(id);
     }
     

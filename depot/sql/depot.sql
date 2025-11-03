@@ -1,9 +1,17 @@
+CREATE DATABASE IF NOT EXISTS depot;
+USE depot;
+
+-- CREATE USER 'depot'@'localhost' IDENTIFIED BY 'depot';
+-- GRANT ALL PRIVILEGES ON depot.* TO 'depot'@'localhost';
+-- FLUSH PRIVILEGES;
+
+
+
 CREATE TABLE compte(
    id INT AUTO_INCREMENT,
    id_particulier INT NOT NULL,
    numero VARCHAR(50) NOT NULL,
    date_ouverture DATE,
-   solde DECIMAL(18,2),
    PRIMARY KEY(id),
    UNIQUE(numero)
 );
@@ -27,7 +35,7 @@ CREATE TABLE transaction(
    date_transaction DATETIME NOT NULL,
    description TEXT,
    mouvement CHAR(1) NOT NULL,
-   id_type INT NOT NULL,
+   id_type INT ,
    id_compte INT NOT NULL,
    PRIMARY KEY(id),
    FOREIGN KEY(id_type) REFERENCES type_transaction(id),
@@ -60,3 +68,16 @@ CREATE TABLE frais(
    PRIMARY KEY(id),
    FOREIGN KEY(id_compte) REFERENCES compte(id)
 );
+
+INSERT IGNORE INTO type_transaction (libelle) VALUES 
+('Depot'),
+('Retrait'),
+('Transfert'),
+('Frais'),
+('Interets');
+
+INSERT IGNORE INTO status (libelle) VALUES 
+('Actif'),
+('Inactif'),
+('Suspendu'),
+('Cloture');

@@ -3,7 +3,8 @@
     <deployment>
         <dependencies>
             <module name="deployment.courant-1.0.0.jar" />
-            <module name="deployment.pret-1.0.0.jar" />
+            <!-- <module name="deployment.pret-1.0.0.jar" />
+            <module name="deployment.change-1.0.0.jar" /> -->
 
         </dependencies>
     </deployment>

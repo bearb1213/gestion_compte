@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  change:
+    build:
+      context: ./change
+      dockerfile: Dockerfile
+    container_name: change
+    ports:
+      - "8081:8080"
+      - "9991:9990"
+    networks:
+      - banknet
+
+networks:
+  banknet:
+    driver: bridge

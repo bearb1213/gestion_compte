@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "libelle": "Ar",
+    "dateDebut": "2024-01-01",
+    "dateFin": "2026-12-31",
+    "tauxChange": 1
+  },
+  {
+    "id": 2,
+    "libelle": "EUR",
+    "dateDebut": "2024-01-01",
+    "dateFin": "2026-12-31",
+    "tauxChange": 4800.50
+  },
+  {
+    "id": 12,
+    "libelle": "EUR",
+    "dateDebut": "2024-01-01",
+    "dateFin": "2024-12-31",
+    "tauxChange": 5000
+  },
+  {
+    "id": 3,
+    "libelle": "USD",
+    "dateDebut": "2024-01-01",
+    "dateFin": "2026-12-31",
+    "tauxChange": 4450.25
+  },
+  {
+    "id": 4,
+    "libelle": "GBP",
+    "dateDebut": "2024-01-01",
+    "dateFin": "2026-12-31",
+    "tauxChange": 5600.75
+  },
+  {
+    "id": 5,
+    "libelle": "JPY",
+    "dateDebut": "2024-01-01",
+    "dateFin": "2026-12-31",
+    "tauxChange": 29.80
+  },
+  {
+    "id": 6,
+    "libelle": "CAD",
+    "dateDebut": "2024-01-01",
+    "dateFin": "2026-12-31",
+    "tauxChange": 3300.40
+  },
+  {
+    "id": 7,
+    "libelle": "CHF",
+    "dateDebut": "2024-01-01",
+    "dateFin": "2026-12-31",
+    "tauxChange": 4950.60
+  },
+  {
+    "id": 8,
+    "libelle": "AUD",
+    "dateDebut": "2024-01-01",
+    "dateFin": "2026-12-31",
+    "tauxChange": 2900.35
+  },
+  {
+    "id": 9,
+    "libelle": "ZAR",
+    "dateDebut": "2024-01-01",
+    "dateFin": "2026-12-31",
+    "tauxChange": 240.15
+  },
+  {
+    "id": 10,
+    "libelle": "INR",
+    "dateDebut": "2024-01-01",
+    "dateFin": "2026-12-31",
+    "tauxChange": 53.45
+  },
+  {
+    "id": 11,
+    "libelle": "CNY",
+    "dateDebut": "2024-01-01",
+    "dateFin": "2026-12-31",
+    "tauxChange": 620.90
+  }
+]

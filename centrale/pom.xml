@@ -35,10 +35,14 @@
         <dependency>
             <groupId>org.wildfly</groupId>
             <artifactId>wildfly-ejb-client-bom</artifactId>
-            <version>${wildfly.version}</version>
+            <version>37.0.0.Final</version>
             <type>pom</type>
         </dependency>
-        
+        <dependency>
+            <groupId>org.wildfly</groupId>
+            <artifactId>wildfly-naming-client</artifactId>
+            <version>1.0.17.Final</version>
+        </dependency>
         <!-- JAXB API nécessaire pour Java 11+ -->
         <dependency>
             <groupId>jakarta.xml.bind</groupId>
@@ -54,13 +58,23 @@
             <systemPath>${project.basedir}/lib/courant-1.0.0.jar</systemPath>
         </dependency>
 
-        <dependency>
+        <!-- <dependency>
             <groupId>com.bank.pret</groupId>
             <artifactId>pret</artifactId>
             <version>1.0.0</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/lib/pret-1.0.0.jar</systemPath>
         </dependency>
+
+        <dependency>
+            <groupId>com.bank.change</groupId>
+            <artifactId>change</artifactId>
+            <version>1.0.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/change-1.0.0.jar</systemPath>
+        </dependency> -->
+
+
     </dependencies>
     
     <build>

@@ -1,0 +1,58 @@
+login
+logout
+
+particulie
+	get: new
+	edit
+	delete
+	view
+	default: list
+
+	post: insert
+	update
+	default: list
+
+operation
+	get: depot
+	retrait
+	transfert
+	default:compte?view
+
+	post: depot
+	retrait
+	transfert
+	default:compte?view
+
+compte  (courant)
+	get: new
+	view
+	block
+	unblock
+	balance
+	default: list
+
+	post: create
+	search
+	default: list
+
+accueil ou /
+
+pret/compte
+	get: create
+	view
+	search
+	changeStatus
+	viewLoans
+	default: list
+
+	post: create
+	searchById
+	searchByNumero
+	default: list
+
+/pret/dashboard
+
+
+
+
+
